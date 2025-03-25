@@ -1,0 +1,21 @@
+Una forma alternativa de cargar una imagen utilizando un path relativo es obtener la ruta absoluta del archivo en tiempo de ejecución. Puedes hacerlo de la siguiente manera en Java:
+
+import java.io.File;
+
+public class Main {
+    public static void main(String[] args) {
+        // Nombre del archivo de la imagen
+        String nombreImagen = "fondocentral.jpg";
+
+        // Obtener la ruta absoluta del directorio actual
+        String directorioActual = System.getProperty("user.dir");
+
+        // Combinar la ruta absoluta con el nombre de la imagen
+        String rutaImagen = directorioActual + File.separator + "RecursosGraficos" + File.separator + nombreImagen;
+
+        // Cargar la imagen usando la ruta absoluta
+        Image image0 = new Image("file:" + rutaImagen);
+
+        // Resto de tu código para trabajar con la imagen cargada
+    }
+}

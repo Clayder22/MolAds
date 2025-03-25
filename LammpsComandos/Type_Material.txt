@@ -1,0 +1,6 @@
+# La unidad que define al sistema.
+
+#units  real
+units	metal
+
+atom_style	full

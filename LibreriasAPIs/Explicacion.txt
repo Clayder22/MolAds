@@ -1,0 +1,1 @@
+Click deercho en el .jar y luego ir hasta "Add as Library" lo que convertira al .jar a una libreria.

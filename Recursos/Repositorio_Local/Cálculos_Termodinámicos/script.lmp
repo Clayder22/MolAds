@@ -1,0 +1,25 @@
+# Simulación de 100 nanosegundos
+
+units           metal
+atom_style      atomic
+
+# Leer el archivo de datos
+read_data      archivo.data
+
+# Definir el potencial
+pair_style      lj/cut 10.0
+pair_coeff      * * 0.1 3.0  # Ajusta los parámetros según tu sistema
+
+# Definir condiciones iniciales
+reset_timestep  0
+timestep        1.0  # Tiempo de paso en femtosegundos
+
+# Configurar el entorno de la simulación
+thermo          100  # Frecuencia de salida de datos
+thermo_style    custom step temp etotal press
+
+# Definir el número de pasos de la simulación
+run             100000  # 100 ns = 100,000 fs
+
+# Guardar el estado final
+write_data      final_state.data

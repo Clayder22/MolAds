@@ -1,0 +1,5 @@
+
+# Definir la caja de simulación
+lattice sc 4.05
+region box block 0 1 0 1 0 1
+create_box 1 box

@@ -1,0 +1,2 @@
+# Definir condiciones de contorno para los 3 ejes de simetria
+boundary p p p
