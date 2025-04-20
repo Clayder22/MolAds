@@ -1,0 +1,18 @@
+/* Estilo para el fondo de la ventana */
+.root {
+    -fx-background-color: #f4f4f4; /* Color de fondo gris claro */
+}
+
+/* Estilo para un botón */
+.button {
+    -fx-background-color: #4CAF50; /* Color de fondo verde */
+    -fx-text-fill: white; /* Color del texto blanco */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Estilo para un campo de texto */
+.text-field {
+    -fx-background-color: #ffffff; /* Color de fondo blanco */
+    -fx-border-color: #c0c0c0; /* Color del borde gris claro */
+    -fx-font-size: 14px; /* Tamaño de fuente */
+}

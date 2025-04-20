@@ -1,0 +1,185 @@
+LAMMPS (2 Aug 2023 - Update 3)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Loaded 1 plugins from E:\Tesis\Empresas\Herramienta Computacional para el estudio de procesos de adsorci�n\Programas\8.LAMMPS\Con GUI\LAMMPS 64-bit 2Aug2023 with GUI\plugins
+# Simulación de 100 nanosegundos
+
+units           metal #lj, real,
+atom_style      atomic #Charge, Bond, Angle,Hybrid, Try, Line, Dipole, Meso, Ellipsoid, Sphere, Full, Body, Asphere (Mejor Full)
+
+# Leer el archivo de datos
+read_data      archivo.data
+Reading data file ...
+  orthogonal box = (-5 -5 -5) to (3.829 10.705 12.673)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  24 atoms
+  read_data CPU = 0.001 seconds
+
+# Definir el potencial
+pair_style      lj/cut 10.0
+pair_coeff      * * 0.1 3.0  # Ajusta los parámetros según tu sistema
+
+# Definir condiciones iniciales
+reset_timestep  0
+timestep        1.0  # Tiempo de paso en femtosegundos
+
+# Configurar el entorno de la simulación
+thermo          1000  # Frecuencia de salida de datos
+thermo_style    custom step temp etotal press
+
+#neighbor    0.3 bin
+#fix             1 all nvd
+#dump	movie all atom 1 dump.melt
+
+# Definir el número de pasos de la simulación
+run             100000  # 100 ns = 100,000 fs
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 2 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 3.085 | 3.085 | 3.085 Mbytes
+   Step          Temp          TotEng         Press     
+         0   0              146.81653      450813.96    
+      1000   0              146.81653      450813.96    
+      2000   0              146.81653      450813.96    
+      3000   0              146.81653      450813.96    
+      4000   0              146.81653      450813.96    
+      5000   0              146.81653      450813.96    
+      6000   0              146.81653      450813.96    
+      7000   0              146.81653      450813.96    
+      8000   0              146.81653      450813.96    
+      9000   0              146.81653      450813.96    
+     10000   0              146.81653      450813.96    
+     11000   0              146.81653      450813.96    
+     12000   0              146.81653      450813.96    
+     13000   0              146.81653      450813.96    
+     14000   0              146.81653      450813.96    
+     15000   0              146.81653      450813.96    
+     16000   0              146.81653      450813.96    
+     17000   0              146.81653      450813.96    
+     18000   0              146.81653      450813.96    
+     19000   0              146.81653      450813.96    
+     20000   0              146.81653      450813.96    
+     21000   0              146.81653      450813.96    
+     22000   0              146.81653      450813.96    
+     23000   0              146.81653      450813.96    
+     24000   0              146.81653      450813.96    
+     25000   0              146.81653      450813.96    
+     26000   0              146.81653      450813.96    
+     27000   0              146.81653      450813.96    
+     28000   0              146.81653      450813.96    
+     29000   0              146.81653      450813.96    
+     30000   0              146.81653      450813.96    
+     31000   0              146.81653      450813.96    
+     32000   0              146.81653      450813.96    
+     33000   0              146.81653      450813.96    
+     34000   0              146.81653      450813.96    
+     35000   0              146.81653      450813.96    
+     36000   0              146.81653      450813.96    
+     37000   0              146.81653      450813.96    
+     38000   0              146.81653      450813.96    
+     39000   0              146.81653      450813.96    
+     40000   0              146.81653      450813.96    
+     41000   0              146.81653      450813.96    
+     42000   0              146.81653      450813.96    
+     43000   0              146.81653      450813.96    
+     44000   0              146.81653      450813.96    
+     45000   0              146.81653      450813.96    
+     46000   0              146.81653      450813.96    
+     47000   0              146.81653      450813.96    
+     48000   0              146.81653      450813.96    
+     49000   0              146.81653      450813.96    
+     50000   0              146.81653      450813.96    
+     51000   0              146.81653      450813.96    
+     52000   0              146.81653      450813.96    
+     53000   0              146.81653      450813.96    
+     54000   0              146.81653      450813.96    
+     55000   0              146.81653      450813.96    
+     56000   0              146.81653      450813.96    
+     57000   0              146.81653      450813.96    
+     58000   0              146.81653      450813.96    
+     59000   0              146.81653      450813.96    
+     60000   0              146.81653      450813.96    
+     61000   0              146.81653      450813.96    
+     62000   0              146.81653      450813.96    
+     63000   0              146.81653      450813.96    
+     64000   0              146.81653      450813.96    
+     65000   0              146.81653      450813.96    
+     66000   0              146.81653      450813.96    
+     67000   0              146.81653      450813.96    
+     68000   0              146.81653      450813.96    
+     69000   0              146.81653      450813.96    
+     70000   0              146.81653      450813.96    
+     71000   0              146.81653      450813.96    
+     72000   0              146.81653      450813.96    
+     73000   0              146.81653      450813.96    
+     74000   0              146.81653      450813.96    
+     75000   0              146.81653      450813.96    
+     76000   0              146.81653      450813.96    
+     77000   0              146.81653      450813.96    
+     78000   0              146.81653      450813.96    
+     79000   0              146.81653      450813.96    
+     80000   0              146.81653      450813.96    
+     81000   0              146.81653      450813.96    
+     82000   0              146.81653      450813.96    
+     83000   0              146.81653      450813.96    
+     84000   0              146.81653      450813.96    
+     85000   0              146.81653      450813.96    
+     86000   0              146.81653      450813.96    
+     87000   0              146.81653      450813.96    
+     88000   0              146.81653      450813.96    
+     89000   0              146.81653      450813.96    
+     90000   0              146.81653      450813.96    
+     91000   0              146.81653      450813.96    
+     92000   0              146.81653      450813.96    
+     93000   0              146.81653      450813.96    
+     94000   0              146.81653      450813.96    
+     95000   0              146.81653      450813.96    
+     96000   0              146.81653      450813.96    
+     97000   0              146.81653      450813.96    
+     98000   0              146.81653      450813.96    
+     99000   0              146.81653      450813.96    
+    100000   0              146.81653      450813.96    
+Loop time of 1.14163 on 1 procs for 100000 steps with 24 atoms
+
+Performance: 7568146.163 ns/day, 0.000 hours/ns, 87594.284 timesteps/s, 2.102 Matom-step/s
+99.9% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.83672    | 0.83672    | 0.83672    |   0.0 | 73.29
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.22287    | 0.22287    | 0.22287    |   0.0 | 19.52
+Output  | 0.001248   | 0.001248   | 0.001248   |   0.0 |  0.11
+Modify  | 0.012619   | 0.012619   | 0.012619   |   0.0 |  1.11
+Other   |            | 0.06817    |            |       |  5.97
+
+Nlocal:             24 ave          24 max          24 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            538 ave         538 max         538 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:            854 ave         854 max         854 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 854
+Ave neighs/atom = 35.583333
+Neighbor list builds = 0
+Dangerous builds = 0
+
+# Guardar el estado final
+write_data      data.*
+System init for write_data ...
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Total wall time: 0:00:01

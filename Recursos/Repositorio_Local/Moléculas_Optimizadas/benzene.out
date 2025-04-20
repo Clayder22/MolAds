@@ -1,0 +1,235 @@
+ *******************************************************************************
+ **                                                                           **
+ **                              MOPAC v22.1.1                                **
+ **                                                                           **
+ *******************************************************************************
+ **          Digital Object Identifier (DOI): 10.5281/zenodo.6511958          **
+ **    Visit the DOI location for information on how to cite this program.    **
+ *******************************************************************************
+
+                              PM7 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Sun Oct  6 12:45:01 2024  *
+ *  PM5        - METHOD NOT SUPPORTED. DEFAULT METHOD USED INSTEAD (See above)
+ *  SYMMETRY   - SYMMETRY CONDITIONS TO BE IMPOSED
+ *  T=         - A TIME OF 172800.0 SECONDS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 7200.0 SECONDS REQUESTED
+ *******************************************************************************
+
+
+
+                    PARAMETER DEPENDENCE DATA
+
+        REFERENCE ATOM      FUNCTION NO.    DEPENDENT ATOM(S)
+            2                  1               3    4    5    6
+            7                  1               8    9   10   11   12
+
+             DESCRIPTIONS OF THE FUNCTIONS USED
+   1      BOND LENGTH    IS SET EQUAL TO THE REFERENCE BOND LENGTH   
+ 
+  SYMMETRY PM5
+ Benzene
+
+  ATOM    CHEMICAL      BOND LENGTH      BOND ANGLE     TWIST ANGLE 
+ NUMBER    SYMBOL       (ANGSTROMS)      (DEGREES)       (DEGREES) 
+   (I)                     NA:I           NB:NA:I       NC:NB:NA:I       NA    NB    NC 
+     1       C          0.00000000       0.0000000       0.0000000        0     0     0
+     2       C          1.38757200  *    0.0000000       0.0000000        1     0     0
+     3       C          1.38757200     120.0000000       0.0000000        2     1     0
+     4       C          1.38757200     120.0000000       0.0000000        3     2     1
+     5       C          1.38757200     120.0000000       0.0000000        4     3     2
+     6       C          1.38757200     120.0000000       0.0000000        5     4     3
+     7       H          1.09505900  *  120.0000000     180.0000000        1     6     5
+     8       H          1.09505900     120.0000000     180.0000000        5     6     1
+     9       H          1.09505900     120.0000000     180.0000000        2     1     6
+    10       H          1.09505900     120.0000000     180.0000000        6     1     2
+    11       H          1.09505900     120.0000000     180.0000000        3     2     1
+    12       H          1.09505900     120.0000000     180.0000000        4     3     2
+ 
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         C          0.0000      0.0000      0.0000
+     2         C          1.3876      0.0000      0.0000
+     3         C          2.0814      1.2017      0.0000
+     4         C          1.3876      2.4033      0.0000
+     5         C         -0.0000      2.4033      0.0000
+     6         C         -0.6938      1.2017      0.0000
+     7         H         -0.5475     -0.9483      0.0000
+     8         H         -0.5475      3.3517     -0.0000
+     9         H          1.9351     -0.9483      0.0000
+    10         H         -1.7888      1.2017     -0.0000
+    11         H          3.1764      1.2017      0.0000
+    12         H          1.9351      3.3517      0.0000
+
+ General Reference for PM7:
+ "Optimization of Parameters for Semiempirical Methods VI: More Modifications to the 
+ NDDO Approximations and Re-optimization of Parameters", J. J. P. Stewart, J. Mol. Mod., 1:32, 19 (2013)
+ https://link.springer.com/article/10.1007/s00894-012-1667-x
+
+           Empirical Formula: C6 H6  =    12 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   D6h 
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 15
+
+
+          Geometry optimization using EF
+
+          DIAGONAL MATRIX USED AS START HESSIAN
+
+ CYCLE:     1 TIME:   0.004 TIME LEFT:  2.00D  GRAD.:    62.294 HEAT:  23.21880
+ CYCLE:     2 TIME:   0.004 TIME LEFT:  2.00D  GRAD.:    21.647 HEAT:  23.00113
+ CYCLE:     3 TIME:   0.004 TIME LEFT:  2.00D  GRAD.:    13.507 HEAT:  22.97531
+ CYCLE:     4 TIME:   0.000 TIME LEFT:  2.00D  GRAD.:     0.112 HEAT:  22.95541
+
+     GRADIENT =  0.11171 IS LESS THAN CUTOFF =  1.00000
+
+
+
+ -------------------------------------------------------------------------------
+ SYMMETRY PM5
+ Benzene
+
+
+
+     GEOMETRY OPTIMISED USING EIGENVECTOR FOLLOWING (EF).     
+     SCF FIELD WAS ACHIEVED                                   
+
+
+                              PM7 CALCULATION
+                                                       MOPAC v22.1.1 Windows
+                                                       Sun Oct  6 12:45:01 2024
+
+
+
+
+          FINAL HEAT OF FORMATION =         22.95541 KCAL/MOL =      96.04545 KJ/MOL
+
+
+          COSMO AREA              =        119.70 SQUARE ANGSTROMS
+          COSMO VOLUME            =        108.31 CUBIC ANGSTROMS
+
+          GRADIENT NORM           =          0.11171          =       0.03225 PER ATOM
+          IONIZATION POTENTIAL    =          9.824129 EV
+          HOMO LUMO ENERGIES (EV) =         -9.824  0.236
+          NO. OF FILLED LEVELS    =         15
+          MOLECULAR WEIGHT        =         78.1134         POINT GROUP:  D6h 
+
+          MOLECULAR DIMENSIONS (Angstroms)
+
+            Atom       Atom       Distance
+            H    12    H     7     4.96377
+            H    11    H     8     4.29875
+            H     7    C     2     0.00000
+
+
+          SCF CALCULATIONS        =          8
+ 
+          WALL-CLOCK TIME         =      0.027 SECONDS
+          COMPUTATION TIME        =      0.078 SECONDS
+
+
+
+
+  ATOM    CHEMICAL      BOND LENGTH      BOND ANGLE     TWIST ANGLE 
+ NUMBER    SYMBOL       (ANGSTROMS)      (DEGREES)       (DEGREES) 
+   (I)                     NA:I           NB:NA:I       NC:NB:NA:I       NA    NB    NC 
+     1       C          0.00000000       0.0000000       0.0000000        0     0     0
+     2       C          1.39399080  *    0.0000000       0.0000000        1     0     0
+     3       C          1.39399080     120.0000000       0.0000000        2     1     0
+     4       C          1.39399080     120.0000000       0.0000000        3     2     1
+     5       C          1.39399080     120.0000000       0.0000000        4     3     2
+     6       C          1.39399080     120.0000000       0.0000000        5     4     3
+     7       H          1.08789265  *  120.0000000     180.0000000        1     6     5
+     8       H          1.08789265     120.0000000     180.0000000        5     6     1
+     9       H          1.08789265     120.0000000     180.0000000        2     1     6
+    10       H          1.08789265     120.0000000     180.0000000        6     1     2
+    11       H          1.08789265     120.0000000     180.0000000        3     2     1
+    12       H          1.08789265     120.0000000     180.0000000        4     3     2
+
+                             CARTESIAN COORDINATES
+
+   1    C        0.000000000     0.000000000     0.000000000
+   2    C        1.393990804     0.000000000     0.000000000
+   3    C        2.090986206     1.207231449     0.000000000
+   4    C        1.393990804     2.414462898     0.000000000
+   5    C       -0.000000000     2.414462898     0.000000000
+   6    C       -0.696995402     1.207231449     0.000000000
+   7    H       -0.543946327    -0.942142676     0.000000000
+   8    H       -0.543946327     3.356605574    -0.000000000
+   9    H        1.937937131    -0.942142676     0.000000000
+  10    H       -1.784888057     1.207231449    -0.000000000
+  11    H        3.178878861     1.207231449     0.000000000
+  12    H        1.937937131     3.356605574     0.000000000
+
+
+           Empirical Formula: C6 H6  =    12 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   D6h 
+
+
+                  EIGENVALUES  
+ -30.44031 -25.82677 -25.82677 -20.91303 -20.91303 -18.07140 -15.39299 -15.22182
+ -14.25881 -14.25881 -13.42660 -11.93830 -11.93830  -9.82413  -9.82413   0.23618
+   0.23618   2.57975   4.42409   4.42409   5.04623   5.33838   5.33838   5.52225
+   5.83304   6.11534   6.11534   6.19439   6.19439   6.41103
+
+
+              NET ATOMIC CHARGES AND DIPOLE CONTRIBUTIONS
+
+  ATOM NO.   TYPE          CHARGE      No. of ELECS.   s-Pop       p-Pop       
+    1          C          -0.148077        4.1481     1.08350     3.06458
+    2          C          -0.148077        4.1481     1.08350     3.06458
+    3          C          -0.148077        4.1481     1.08350     3.06458
+    4          C          -0.148077        4.1481     1.08350     3.06458
+    5          C          -0.148077        4.1481     1.08350     3.06458
+    6          C          -0.148077        4.1481     1.08350     3.06458
+    7          H           0.148077        0.8519     0.85192
+    8          H           0.148077        0.8519     0.85192
+    9          H           0.148077        0.8519     0.85192
+   10          H           0.148077        0.8519     0.85192
+   11          H           0.148077        0.8519     0.85192
+   12          H           0.148077        0.8519     0.85192
+ DIPOLE           X         Y         Z       TOTAL
+ POINT-CHG.    -0.000     0.000     0.000     0.000
+ HYBRID         0.000    -0.000    -0.000     0.000
+ SUM           -0.000     0.000     0.000     0.000
+
+
+          ATOMIC ORBITAL ELECTRON POPULATIONS
+
+     Atom    s        px        py        pz   
+    1  C   1.08350   1.01041   1.05417   1.00000
+    2  C   1.08350   1.01041   1.05417   1.00000
+    3  C   1.08350   1.07605   0.98852   1.00000
+    4  C   1.08350   1.01041   1.05417   1.00000
+    5  C   1.08350   1.01041   1.05417   1.00000
+    6  C   1.08350   1.07605   0.98852   1.00000
+    7  H   0.85192
+    8  H   0.85192
+    9  H   0.85192
+   10  H   0.85192
+   11  H   0.85192
+   12  H   0.85192
+
+ **********************
+ *                    *
+ * JOB ENDED NORMALLY *
+ *                    *
+ **********************
+
+
+
+ TOTAL JOB TIME:             0.03 SECONDS
+
+ == MOPAC DONE ==
